@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Injection Queen I Full Face Verjongingsplan</title>
+    <meta name="description" content="Ontdek het Full Face Verjongingsplan van Injection Queen Amsterdam. Specialist in Botox, Fillers & Skinboosters voor een natuurlijk, stralend resultaat. Boek nu uw gratis consult!">
+    <meta name="author" content="Injection Queen">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.injectionqueen.nl/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Injection Queen I Full Face Verjongingsplan">
+    <meta property="og:description" content="Ontdek het Full Face Verjongingsplan van Injection Queen Amsterdam. Specialist in Botox, Fillers & Skinboosters voor een natuurlijk, stralend resultaat. Boek nu uw gratis consult!">
+    <meta property="og:type" content="website">
+    <!-- og:url removed to allow social previews to work on staging/Netlify URLs -->
+    <meta property="og:image" content="./assets/hero-rejuvenation.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Injection Queen I Full Face Verjongingsplan">
+    <meta name="twitter:description" content="Ontdek het Full Face Verjongingsplan van Injection Queen Amsterdam. Specialist in Botox, Fillers & Skinboosters voor een natuurlijk, stralend resultaat. Boek nu uw gratis consult!">
+    <meta name="twitter:image" content="./assets/hero-rejuvenation.webp">
+
+    <!-- Schema.org / Google+ -->
+    <meta itemprop="image" content="https://www.injectionqueen.nl/assets/hero-rejuvenation.webp">
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Injection Queen",
+      "image": "https://www.injectionqueen.nl/assets/hero-rejuvenation.webp",
+      "@id": "https://www.injectionqueen.nl/#organization",
+      "url": "https://www.injectionqueen.nl/",
+      "telephone": "+31201234567",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Van Woustraat 163",
+        "addressLocality": "Amsterdam",
+        "postalCode": "1074 AK",
+        "addressCountry": "NL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.3534,
+        "longitude": 4.9015
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "10:00",
+        "closes": "18:00"
+      },
+      "priceRange": "$$",
+      "description": "Specialist in Full Face Rejuvenation, Botox, en Fillers in Amsterdam. Een persoonlijk behandelplan voor een natuurlijk en jeugdig resultaat."
+    }
+    </script>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Leaflet Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+    <div class="min-h-screen bg-background">
+        <!-- Header -->
+        <header class="fixed top-0 left-0 right-0 z-50 transparent-nav border-b transition-all duration-300">
+            <div class="container-narrow mx-auto px-4 md:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <!-- Logo -->
+                    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="block hover:opacity-80 transition-opacity" title="Terug naar boven">
+                        <img src="./assets/injectionqueenlogo.webp" alt="Injection Queen - Full Face Verjongingsplan" class="h-12 w-auto object-contain">
+                    </a>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden md:flex items-center gap-8">
+                        <a href="https://www.injectionqueen.nl" class="text-base font-medium nav-link hover:opacity-80 transition-colors">Hoofdwebsite</a>
+                        <button onclick="scrollToSection('over-ons')" class="text-base font-medium nav-link hover:opacity-80 transition-colors">Over ons</button>
+                        <button onclick="scrollToSection('behandelingen')" class="text-base font-medium nav-link hover:opacity-80 transition-colors">Behandelingen</button>
+                        <button onclick="scrollToSection('voor-na')" class="text-base font-medium nav-link hover:opacity-80 transition-colors">Voor & na</button>
+                        <button onclick="scrollToSection('reviews')" class="text-base font-medium nav-link hover:opacity-80 transition-colors">Ervaringen</button>
+                        <button onclick="scrollToSection('faq')" class="text-base font-medium nav-link hover:opacity-80 transition-colors">FAQ</button>
+                        
+                        <a href="https://www.injectionqueen.nl/afspraak-maken" title="Boek een gratis consult bij Injection Queen Amsterdam" class="btn btn-default">
+                            Afspraak maken
+                        </a>
+                    </nav>
+
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 mobile-menu-icon" id="mobile-menu-btn" aria-label="Toggle menu">
+                        <i data-lucide="menu" id="menu-icon"></i>
+                        <i data-lucide="x" id="close-icon" class="hidden"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <nav id="mobile-menu" class="hidden md:hidden py-4 border-t border-border animate-fade-up">
+                    <div class="flex flex-col gap-4">
+                        <a href="https://www.injectionqueen.nl" class="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 text-left">Hoofdwebsite</a>
+                        <button onclick="scrollToSection('over-ons')" class="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 text-left">Over ons</button>
+                        <button onclick="scrollToSection('behandelingen')" class="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 text-left">Behandelingen</button>
+                        <button onclick="scrollToSection('voor-na')" class="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 text-left">Voor & na</button>
+                        <button onclick="scrollToSection('reviews')" class="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 text-left">Ervaringen</button>
+                        <button onclick="scrollToSection('faq')" class="text-base font-medium text-foreground/80 hover:text-primary transition-colors py-2 text-left">FAQ</button>
+                        
+                        <a href="https://www.injectionqueen.nl/afspraak-maken" title="Boek een gratis consult bij Injection Queen" class="btn btn-default w-full">
+                            Afspraak maken
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="relative min-h-screen flex items-center pt-20">
+                <!-- Background Image -->
+                <div class="absolute inset-0 z-0">
+                    <img src="./assets/hero-rejuvenation.webp" alt="Resultaten Full Face Rejuvenation behandeling Injection Queen Amsterdam" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
+                </div>
+
+                <!-- Content -->
+                <div class="relative z-10 container-narrow mx-auto px-4 md:px-8 py-16 md:py-24">
+                    <div class="max-w-2xl">
+                        <!-- Badge -->
+                        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6 animate-fade-up">
+                            <span class="text-primary text-sm font-semibold">Nieuw</span>
+                            <span class="text-white/90 text-sm">Persoonlijk anti-aging plan</span>
+                        </div>
+
+                        <!-- Main Heading -->
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-up" style="animation-delay: 0.1s">
+                            Full Face
+                            <span class="block text-primary">Verjongingsplan</span>
+                        </h1>
+
+                        <!-- Subheading -->
+                        <p class="text-lg md:text-xl text-white/90 mb-8 leading-relaxed animate-fade-up" style="animation-delay: 0.2s">
+                            Bereik een jeugdige, natuurlijke uitstraling met ons gepersonaliseerde 
+                            non-chirurgische facelift plan. Combineer Botox, fillers en skinboosters 
+                            voor optimale resultaten.
+                        </p>
+
+                        <!-- Trust Points -->
+                        <div class="flex flex-col sm:flex-row gap-4 mb-10 animate-fade-up" style="animation-delay: 0.3s">
+                            <div class="flex items-center gap-2 text-white/90">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-primary"></i>
+                                <span class="text-sm">BIG-geregistreerde artsen</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-white/90">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-primary"></i>
+                                <span class="text-sm">Natuurlijk resultaat</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-white/90">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-primary"></i>
+                                <span class="text-sm">100% tevredenheidsgarantie</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 animate-fade-up" style="animation-delay: 0.4s">
+                            <a href="https://www.injectionqueen.nl/contact" class="btn btn-hero">
+                                Gratis Consult
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                            <a href="#wat-is-rejuvenation" class="btn btn-hero-outline">
+                                Meer informatie
+                            </a>
+                        </div>
+
+                        <!-- Hero Stats with Counter -->
+                        <div class="flex flex-wrap gap-8 mt-12 animate-fade-up" style="animation-delay: 0.6s">
+                            <div>
+                                <div class="text-3xl font-bold text-white flex items-center">
+                                    <span class="counter" data-target="5000">0</span>+
+                                </div>
+                                <div class="text-sm text-white/80">Behandelingen</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-white flex items-center">
+                                    <span class="counter" data-target="1000">0</span>+
+                                </div>
+                                <div class="text-sm text-white/80">Klanten</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-white flex items-center">
+                                    <span class="counter" data-target="100">0</span>%
+                                </div>
+                                <div class="text-sm text-white/80">Tevredenheid</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="over-ons" class="section-padding bg-background">
+                <div class="container-narrow mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <!-- Left Content -->
+                        <div>
+                            <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">
+                                Over Injection Queen
+                            </span>
+                            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+                                Uw vertrouwde partner voor natuurlijke schoonheid
+                            </h2>
+                            <div class="space-y-4 text-muted-foreground">
+                                <p>
+                                    <a href="https://www.injectionqueen.nl/over-ons" class="text-primary font-semibold hover:underline" title="Over Injection Queen Amsterdam">
+                                        Injection Queen
+                                    </a>
+                                    is dé specialist in cosmetische injectables in Amsterdam. 
+                                    Onze kliniek staat bekend om natuurlijke resultaten en persoonlijke aandacht.
+                                </p>
+                                <p>
+                                    Wij geloven dat schoonheid begint bij zelfvertrouwen. Daarom focussen we op 
+                                    subtiele verbeteringen die je natuurlijke uitstraling versterken – nooit overdreven, 
+                                    altijd elegant.
+                                </p>
+                                <p>
+                                    Alle behandelingen worden uitgevoerd door
+                                    <strong class="text-foreground">BIG-geregistreerde artsen</strong> met 
+                                    uitgebreide ervaring in esthetische geneeskunde. Veiligheid en kwaliteit 
+                                    staan bij ons altijd voorop.
+                                </p>
+                            </div>
+
+                            <!-- Stats -->
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-8">
+                                <div class="text-center">
+                                    <p class="text-2xl md:text-3xl font-bold text-primary">5000+</p>
+                                    <p class="text-sm text-muted-foreground">Tevreden klanten</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl md:text-3xl font-bold text-primary">5+</p>
+                                    <p class="text-sm text-muted-foreground">Jaar ervaring</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl md:text-3xl font-bold text-primary">100%</p>
+                                    <p class="text-sm text-muted-foreground">BIG-geregistreerd</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl md:text-3xl font-bold text-primary">4.9★</p>
+                                    <p class="text-sm text-muted-foreground">Gemiddelde review</p>
+                                </div>
+                            </div>
+
+                            <!-- CTA -->
+                            <div class="mt-8">
+                                <a href="https://www.injectionqueen.nl/over-ons" class="btn btn-default" title="Lees meer over Injection Queen">
+                                    Lees meer over ons team
+                                    <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Right - Trust Elements -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-secondary rounded-2xl p-6 shadow-soft">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                                    <i data-lucide="award" class="w-6 h-6 text-primary"></i>
+                                </div>
+                                <h3 class="font-bold text-foreground mb-2">Erkend specialist</h3>
+                                <p class="text-sm text-muted-foreground">Lid van beroepsverenigingen en continue bijscholing</p>
+                            </div>
+                            <div class="bg-secondary rounded-2xl p-6 shadow-soft">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                                    <i data-lucide="users" class="w-6 h-6 text-primary"></i>
+                                </div>
+                                <h3 class="font-bold text-foreground mb-2">Persoonlijke aanpak</h3>
+                                <p class="text-sm text-muted-foreground">Elk behandelplan op maat voor jouw unieke behoeften</p>
+                            </div>
+                            <div class="bg-secondary rounded-2xl p-6 shadow-soft">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                                    <i data-lucide="heart" class="w-6 h-6 text-primary"></i>
+                                </div>
+                                <h3 class="font-bold text-foreground mb-2">Natuurlijke resultaten</h3>
+                                <p class="text-sm text-muted-foreground">Subtiel en elegant, nooit overdreven</p>
+                            </div>
+                            <div class="bg-secondary rounded-2xl p-6 shadow-soft">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                                    <i data-lucide="shield-check" class="w-6 h-6 text-primary"></i>
+                                </div>
+                                <h3 class="font-bold text-foreground mb-2">Veilig & Steriel</h3>
+                                <p class="text-sm text-muted-foreground">Hoogste standaarden voor hygiëne en veiligheid</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What Is Section -->
+            <section id="wat-is-rejuvenation" class="section-padding bg-background">
+                <div class="container-narrow mx-auto">
+                    <!-- Section Header -->
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">
+                            Complete gezichtsverjonging
+                        </span>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+                            Wat is Full Face Rejuvenation?
+                        </h2>
+                        <p class="text-lg text-muted-foreground leading-relaxed">
+                            Full Face Rejuvenation is een complete non-chirurgische facelift benadering die 
+                            het gehele gezicht behandelt. In plaats van losse behandelingen, combineert ons 
+                            <strong class="text-foreground">Full Face Rejuvenation Plan</strong> strategisch 
+                            Botox, fillers en skinboosters voor een harmonieus, natuurlijk resultaat.
+                        </p>
+                    </div>
+
+                    <!-- How It Works -->
+                    <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                        <div>
+                            <h3 class="text-2xl font-bold text-foreground mb-6">Hoe werkt het?</h3>
+                            <div class="space-y-4 text-muted-foreground">
+                                <p>
+                                    Tijdens je <strong class="text-foreground">gratis consult</strong> analyseren 
+                                    onze specialisten je gezicht en bespreken we je wensen. We kijken naar rimpels, 
+                                    volume verlies, huidkwaliteit en symmetrie.
+                                </p>
+                                <p>
+                                    Op basis hiervan stellen we een gepersonaliseerd behandelplan samen dat 
+                                    precies aansluit bij jouw doelen. Dit kan bestaan uit:
+                                </p>
+                                <ul class="list-disc list-inside space-y-2 ml-4">
+                                    <li>Botox voor dynamische rimpels (frons, voorhoofd, kraaienpootjes)</li>
+                                    <li>Fillers voor volume herstel (wangen, lippen, kaaklijn)</li>
+                                    <li>Skinboosters voor diepe hydratatie en huidverbetering</li>
+                                </ul>
+                                <p>
+                                    Het resultaat? Een frisse, jeugdige uitstraling die nog steeds 
+                                    <em>jij</em> bent – alleen dan de beste versie.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-secondary rounded-2xl p-8 shadow-soft h-full flex flex-col justify-center">
+                            <div class="aspect-square rounded-xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center overflow-hidden">
+                                <img src="./assets/rejuvenation-plan.webp" alt="Jouw perfecte Full Face Rejuvenation Plan" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefits Grid -->
+                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-card border border-border rounded-xl p-6 shadow-soft hover:shadow-elevated transition-shadow duration-300">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                                <i data-lucide="sparkles" class="w-6 h-6 text-primary"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-foreground mb-2">Natuurlijke resultaten</h3>
+                            <p class="text-sm text-muted-foreground">Subtiele verbeteringen die je natuurlijke schoonheid versterken, zonder 'overdone' look.</p>
+                        </div>
+                        <div class="bg-card border border-border rounded-xl p-6 shadow-soft hover:shadow-elevated transition-shadow duration-300">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                                <i data-lucide="heart" class="w-6 h-6 text-primary"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-foreground mb-2">Gepersonaliseerd</h3>
+                            <p class="text-sm text-muted-foreground">Elk plan wordt op maat gemaakt voor jouw unieke gezichtsstructuur en wensen.</p>
+                        </div>
+                        <div class="bg-card border border-border rounded-xl p-6 shadow-soft hover:shadow-elevated transition-shadow duration-300">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                                <i data-lucide="clock" class="w-6 h-6 text-primary"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-foreground mb-2">Langdurig effect</h3>
+                            <p class="text-sm text-muted-foreground">Geniet van resultaten die maanden aanhouden met minimale onderhoudsbehandelingen.</p>
+                        </div>
+                        <div class="bg-card border border-border rounded-xl p-6 shadow-soft hover:shadow-elevated transition-shadow duration-300">
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                                <i data-lucide="shield" class="w-6 h-6 text-primary"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-foreground mb-2">Veilig & medisch</h3>
+                            <p class="text-sm text-muted-foreground">Uitgevoerd door BIG-geregistreerde artsen met strikte veiligheidsprotocollen.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Treatments Section -->
+            <section id="behandelingen" class="section-padding bg-secondary">
+                <div class="container-narrow mx-auto">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">
+                            Inbegrepen behandelingen
+                        </span>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+                            Wat zit er in het plan?
+                        </h2>
+                        <p class="text-lg text-muted-foreground">
+                            Ons Botox + fillers combo behandeling combineert de beste anti-aging injectables 
+                            voor een complete non-chirurgische facelift met natuurlijke esthetische resultaten.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Botox -->
+                        <div class="bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 group">
+                            <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i data-lucide="syringe" class="w-8 h-8 text-primary"></i>
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="text-2xl font-bold text-foreground mb-1">Botox</h3>
+                                <span class="text-primary font-medium text-sm">Rimpelreductie</span>
+                            </div>
+                            <p class="text-muted-foreground mb-6">Ontspant dynamische rimpels voor een fris, ontspannen uiterlijk zonder starre gezichtsuitdrukking.</p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Fronsrimpels verminderen</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Voorhoofdrimpels gladstrijken</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Kraaienpootjes verzachten</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Browlift effect</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Preventief anti-aging</li>
+                            </ul>
+                            <div class="pt-4 border-t border-border">
+                                <span class="text-xs text-muted-foreground uppercase tracking-wider">Werkingsduur</span>
+                                <p class="text-foreground font-semibold">3-6 maanden</p>
+                            </div>
+                        </div>
+
+                        <!-- Fillers -->
+                        <div class="bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 group">
+                            <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i data-lucide="droplets" class="w-8 h-8 text-primary"></i>
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="text-2xl font-bold text-foreground mb-1">Fillers</h3>
+                                <span class="text-primary font-medium text-sm">Volume herstel</span>
+                            </div>
+                            <p class="text-muted-foreground mb-6">Herstelt verloren volume en creëert natuurlijke contouren voor een jeugdige gezichtsvorm.</p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Wangen opvullen</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Lippen volumeren</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Kaaklijn definiëren</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Traangoten opvullen</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Symmetrie verbeteren</li>
+                            </ul>
+                            <div class="pt-4 border-t border-border">
+                                <span class="text-xs text-muted-foreground uppercase tracking-wider">Werkingsduur</span>
+                                <p class="text-foreground font-semibold">6-18 maanden</p>
+                            </div>
+                        </div>
+
+                        <!-- Skinboosters -->
+                        <div class="bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 group">
+                            <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i data-lucide="sparkles" class="w-8 h-8 text-primary"></i>
+                            </div>
+                            <div class="mb-4">
+                                <h3 class="text-2xl font-bold text-foreground mb-1">Skinboosters</h3>
+                                <span class="text-primary font-medium text-sm">Huidverbetering</span>
+                            </div>
+                            <p class="text-muted-foreground mb-6">Diepe hydratatie en verbetering van huidkwaliteit van binnenuit voor een stralende glow.</p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Diepe hydratatie</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Huidkwaliteit verbeteren</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Fijne lijntjes verzachten</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Stralende glow</li>
+                                <li class="flex items-center gap-3 text-sm text-foreground"><i data-lucide="check" class="w-4 h-4 text-primary flex-shrink-0"></i>Collageen stimulatie</li>
+                            </ul>
+                            <div class="pt-4 border-t border-border">
+                                <span class="text-xs text-muted-foreground uppercase tracking-wider">Werkingsduur</span>
+                                <p class="text-foreground font-semibold">6-12 maanden</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 bg-primary/5 border border-primary/20 rounded-2xl p-8 text-center">
+                        <h3 class="text-xl font-bold text-foreground mb-3">De kracht van combinatie</h3>
+                        <p class="text-muted-foreground max-w-2xl mx-auto">
+                            Door deze behandelingen strategisch te combineren bereiken we een harmonieus 
+                            resultaat dat met afzonderlijke behandelingen niet mogelijk zou zijn. 
+                            Dit is de essentie van complete gezichtsverjonging in Nederland.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Who Is It For Section -->
+            <section class="section-padding bg-background">
+                <div class="container-narrow mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">Is dit voor jou?</span>
+                            <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-6">Voor wie is het Full Face Rejuvenation Plan?</h2>
+                            <p class="text-lg text-muted-foreground mb-8">
+                                Het plan is perfect voor mannen en vrouwen die algehele verouderingstekenen 
+                                waarnemen en een complete non-chirurgische facelift willen – zonder 
+                                ingrijpende chirurgie of lange hersteltijd.
+                            </p>
+
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="user-check" class="w-3.5 h-3.5 text-primary"></i></div>
+                                    <span class="text-foreground">Merkt algemene tekenen van veroudering (rimpels, volume verlies)</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="user-check" class="w-3.5 h-3.5 text-primary"></i></div>
+                                    <span class="text-foreground">Wil een fris, jeugdig uiterlijk zonder operatie</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="user-check" class="w-3.5 h-3.5 text-primary"></i></div>
+                                    <span class="text-foreground">Zoekt een complete, gecoördineerde aanpak</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="user-check" class="w-3.5 h-3.5 text-primary"></i></div>
+                                    <span class="text-foreground">Wil natuurlijke resultaten – geen overdreven look</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="user-check" class="w-3.5 h-3.5 text-primary"></i></div>
+                                    <span class="text-foreground">Heeft geen tijd voor lange herstelperiodes</span>
+                                </div>
+                            </div>
+
+                            <button onclick="scrollToSection('contact')" class="btn btn-default btn-size-lg">
+                                Plan je gratis consult
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </button>
+                        </div>
+
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-3 mb-8">
+                                <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
+                                    <i data-lucide="users" class="w-6 h-6 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-foreground">Voor elke leeftijd</h3>
+                                    <p class="text-sm text-muted-foreground">Aangepast aan jouw fase</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-secondary rounded-xl p-6 border border-border hover:border-primary/30 transition-colors">
+                                <div class="flex items-center gap-4">
+                                    <div class="text-3xl font-bold text-primary">30-40</div>
+                                    <div class="flex-1">
+                                        <span class="block mb-2 text-xs text-muted-foreground uppercase tracking-wider">Leeftijdsgroep</span>
+                                        <p class="text-foreground">Preventief anti-aging en eerste tekenen van veroudering aanpakken</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-secondary rounded-xl p-6 border border-border hover:border-primary/30 transition-colors">
+                                <div class="flex items-center gap-4">
+                                    <div class="text-3xl font-bold text-primary">40-50</div>
+                                    <div class="flex-1">
+                                        <span class="block mb-2 text-xs text-muted-foreground uppercase tracking-wider">Leeftijdsgroep</span>
+                                        <p class="text-foreground">Volume herstel en duidelijke rimpelreductie</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-secondary rounded-xl p-6 border border-border hover:border-primary/30 transition-colors">
+                                <div class="flex items-center gap-4">
+                                    <div class="text-3xl font-bold text-primary">50+</div>
+                                    <div class="flex-1">
+                                        <span class="block mb-2 text-xs text-muted-foreground uppercase tracking-wider">Leeftijdsgroep</span>
+                                        <p class="text-foreground">Uitgebreide verjonging met focus op natuurlijk resultaat</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-primary/5 rounded-xl p-6">
+                                <p class="text-sm text-muted-foreground italic">
+                                    "Tijdens het consult bekijken we samen wat het beste bij jouw 
+                                    gezicht en wensen past. Er is geen one-size-fits-all – elk 
+                                    plan is uniek."
+                                </p>
+                                <p class="text-sm font-semibold text-foreground mt-3">— Team Injection Queen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Safety Section -->
+            <section id="veiligheid" class="section-padding bg-foreground text-background">
+                <div class="container-narrow mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">Veiligheid & kwaliteit</span>
+                            <h2 class="text-3xl md:text-4xl font-bold mb-6">Jouw veiligheid is onze prioriteit</h2>
+                            <p class="text-lg text-background/80 mb-8">
+                                Bij Injection Queen begrijpen we dat je gezicht het kostbaarste is wat je hebt. 
+                                Daarom nemen wij geen enkel risico. Onze behandelingen worden uitgevoerd door 
+                                gekwalificeerde artsen met een BIG-registratie, die strenge protocollen volgen 
+                                en te allen tijde veilig werken.
+                            </p>
+                            <p class="text-background/80">
+                                We zijn eerlijk over wat haalbaar is en streven naar <strong class="text-primary">
+                                natuurlijke esthetische resultaten zonder chirurgie</strong>. Geen belofte 
+                                van wonderen, wel realistische verwachtingen en prachtige resultaten.
+                            </p>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="bg-background/5 backdrop-blur-sm rounded-xl p-6 border border-background/10">
+                                <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                                    <i data-lucide="shield" class="w-6 h-6 text-primary"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-background mb-2">BIG-geregistreerde artsen</h3>
+                                <p class="text-sm text-background/70">Al onze behandelaars zijn geregistreerd in het BIG-register en volgen continue bijscholing.</p>
+                            </div>
+                            <div class="bg-background/5 backdrop-blur-sm rounded-xl p-6 border border-background/10">
+                                <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                                    <i data-lucide="award" class="w-6 h-6 text-primary"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-background mb-2">Gecertificeerde producten</h3>
+                                <p class="text-sm text-background/70">Wij werken uitsluitend met FDA- en CE-goedgekeurde producten van topmerken.</p>
+                            </div>
+                            <div class="bg-background/5 backdrop-blur-sm rounded-xl p-6 border border-background/10">
+                                <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                                    <i data-lucide="heart" class="w-6 h-6 text-primary"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-background mb-2">Natuurlijk resultaat</h3>
+                                <p class="text-sm text-background/70">Geen overdreven 'werk' – wij streven naar subtiele verbeteringen die jouw natuurlijke schoonheid versterken.</p>
+                            </div>
+                            <div class="bg-background/5 backdrop-blur-sm rounded-xl p-6 border border-background/10">
+                                <div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
+                                    <i data-lucide="check-circle-2" class="w-6 h-6 text-primary"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-background mb-2">Strikte protocollen</h3>
+                                <p class="text-sm text-background/70">We volgen medische protocollen en werken in een steriele, veilige omgeving.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-16 text-center">
+                        <div class="inline-flex flex-wrap items-center justify-center gap-8 bg-background/5 rounded-2xl px-8 py-6">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="shield" class="w-5 h-5 text-primary"></i>
+                                <span class="text-sm font-medium">BIG Geregistreerd</span>
+                            </div>
+                            <div class="w-px h-6 bg-background/20 hidden sm:block"></div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="award" class="w-5 h-5 text-primary"></i>
+                                <span class="text-sm font-medium">5+ jaar ervaring</span>
+                            </div>
+                            <div class="w-px h-6 bg-background/20 hidden sm:block"></div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="heart" class="w-5 h-5 text-primary"></i>
+                                <span class="text-sm font-medium">5000+ behandelingen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Before After Section -->
+            <section id="voor-na" class="section-padding bg-background">
+                <div class="container-narrow mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">Resultaten</span>
+                            <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-6">Voor & Na Resultaten</h2>
+                            <p class="text-lg text-muted-foreground mb-6">
+                                Bekijk de transformaties van onze klanten. Elk resultaat is uniek, 
+                                net als jij. Onze <strong class="text-foreground">Full Face Rejuvenation 
+                                Plan</strong> in Nederland levert consistente, natuurlijke resultaten.
+                            </p>
+                            <p class="text-muted-foreground mb-8">
+                                Van subtiele verfrissingn tot meer uitgesproken verjongingen – we 
+                                laten je graag zien wat mogelijk is met de juiste combinatie van 
+                                anti-aging injectables.
+                            </p>
+                            <a href="https://www.injectionqueen.nl/voor-na/" class="btn btn-default">
+                            Bekijk alle voor & na foto's
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        </div>
+                        <div class="relative">
+                            <div class="grid grid-cols-2 gap-6">
+                                <div class="space-y-6">
+                                    <div class="aspect-[3/4] bg-gradient-to-br from-secondary to-muted rounded-2xl flex items-center justify-center overflow-hidden">
+                                        <img src="./assets/voor1.webp" alt="Voor behandeling 1" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="aspect-square bg-gradient-to-br from-secondary to-muted rounded-2xl flex items-center justify-center overflow-hidden">
+                                        <img src="./assets/voor2.webp" alt="Voor behandeling 2" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="space-y-6 pt-12">
+                                    <div class="aspect-square bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center border-2 border-primary/20 overflow-hidden">
+                                        <img src="./assets/na1.webp" alt="Na behandeling 1" class="w-full h-full object-cover">
+                                    </div>
+                                    <div class="aspect-[3/4] bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl flex items-center justify-center border-2 border-primary/20 overflow-hidden">
+                                        <img src="./assets/na2.webp" alt="Na behandeling 2" class="w-full h-full object-cover">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent flex items-end justify-center pb-8">
+                                <div class="bg-card rounded-xl px-6 py-4 shadow-elevated text-center">
+                                    <p class="text-sm text-muted-foreground mb-1">Bekijk echte resultaten</p>
+                                    <a href="https://www.injectionqueen.nl/voor-na/" class="text-primary font-semibold hover:underline">
+                                        Ga naar galerij →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section id="reviews" class="section-padding bg-secondary">
+                <div class="container-narrow mx-auto">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">Ervaringen</span>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">Wat zeggen onze klanten</h2>
+                        <p class="text-lg text-muted-foreground">Lees wat anderen hebben ervaren met onze anti-aging injectables in Amsterdam.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-8 mb-12">
+                        <div class="bg-card rounded-2xl p-8 shadow-soft relative">
+                            <i data-lucide="quote" class="w-10 h-10 text-primary/20 absolute top-6 right-6"></i>
+                            <div class="flex gap-1 mb-4">
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            </div>
+                            <p class="text-foreground mb-6 leading-relaxed">"Ik heb voor het eerst mijn lippen laten doen en was erg blij! Alles werd goed uitgelegd, er was geen reden voor stress. Ik was erg blij met het resultaat, het is duidelijk dat de meester van zijn werk houdt en het met heel zijn hart doet. Ik raad het aan."</p>
+                            <div class="pt-4 border-t border-border">
+                                <p class="font-bold text-foreground">Chelsea</p>
+                                <p class="text-sm text-primary">Cosmetische Injectables</p>
+                            </div>
+                        </div>
+                        <div class="bg-card rounded-2xl p-8 shadow-soft relative">
+                            <i data-lucide="quote" class="w-10 h-10 text-primary/20 absolute top-6 right-6"></i>
+                            <div class="flex gap-1 mb-4">
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            </div>
+                            <p class="text-foreground mb-6 leading-relaxed">"Om de paar maanden bezoek ik Injection Queen zodat mijn lippen blijven zoals ik ze wil. Ze stelt me nooit teleur, groot fan van hoe ze de lipfillers plaatst voor een prachtig resultaat. Geen eendenlippen, maar gewoon mooie volle lippen."</p>
+                            <div class="pt-4 border-t border-border">
+                                <p class="font-bold text-foreground">Rabia</p>
+                                <p class="text-sm text-primary">Lip fillers</p>
+                            </div>
+                        </div>
+                        <div class="bg-card rounded-2xl p-8 shadow-soft relative">
+                            <i data-lucide="quote" class="w-10 h-10 text-primary/20 absolute top-6 right-6"></i>
+                            <div class="flex gap-1 mb-4">
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                                <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400"></i>
+                            </div>
+                            <p class="text-foreground mb-6 leading-relaxed">"Ik heb een geweldige ervaring gehad bij deze Botoxkliniek. De arts nam echt de tijd om naar me te luisteren, waardoor ik me echt gehoord en welkom voelde. Alles voelde kalm, professioneel en persoonlijk. Ik ben ook erg blij met de nazorg en zou deze kliniek zeker aanbevelen."</p>
+                            <div class="pt-4 border-t border-border">
+                                <p class="font-bold text-foreground">Elli</p>
+                                <p class="text-sm text-primary">Algemene Esthetische Behandelingen</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="text-muted-foreground mb-4">Bekijk alle reviews van onze klanten</p>
+                        <a href="https://www.injectionqueen.nl/" class="btn btn-outline">
+                            Bekijk alle reviews
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq" class="section-padding bg-background">
+                <div class="container-narrow mx-auto">
+                    <div class="text-center max-w-3xl mx-auto mb-16">
+                        <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">Veelgestelde vragen</span>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">Heb je vragen?</h2>
+                        <p class="text-lg text-muted-foreground">Hier vind je antwoorden op de meest gestelde vragen over ons Full Face Rejuvenation Plan.</p>
+                    </div>
+
+                    <div class="max-w-3xl mx-auto space-y-4" id="faq-accordion">
+                        <!-- FAQ Items will be here -->
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                Is Full Face Rejuvenation veilig?
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground accordion-chevron"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Ja, alle behandelingen bij Injection Queen worden uitgevoerd door BIG-geregistreerde artsen die strenge medische protocollen volgen. We gebruiken uitsluitend FDA- en CE-goedgekeurde producten van gerenommeerde merken.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                Hoe lang houden de resultaten aan?
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground accordion-chevron"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Botox werkt typisch 3-6 maanden, afhankelijk van de behandelde zone en je persoonlijke reactie. Fillers kunnen 6-18 maanden aanhouden, afhankelijk van het product en de behandelzone. Skinboosters hebben een effect van 6-12 maanden.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                Wat is inbegrepen in het Full Face Rejuvenation Plan?
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground accordion-chevron"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Het plan omvat een gepersonaliseerde combinatie van Botox, dermale fillers en skinboosters, afgestemd op jouw unieke gezichtskenmerken en doelen. Tijdens het gratis consult stellen we samen het perfecte plan op.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                Is de behandeling pijnlijk?
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground accordion-chevron"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>De meeste klanten ervaren minimaal ongemak. We gebruiken verdovende crèmes en fijne naalden om de behandeling zo comfortabel mogelijk te maken. De meeste behandelingen duren 30-60 minuten.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                Wat is de hersteltijd?
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground accordion-chevron"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Er is vrijwel geen downtime. Je kunt direct na de behandeling je normale activiteiten hervatten. Sommige klanten ervaren lichte zwelling of blauwe plekken die binnen enkele dagen verdwijnen.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                Hoeveel kost het Full Face Rejuvenation Plan?
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground accordion-chevron"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>De kosten zijn afhankelijk van jouw specifieke behandelplan. Tijdens het gratis consult bespreken we je wensen en geven we een gepersonaliseerde prijsindicatie. Bekijk onze tarieven pagina voor algemene prijzen.</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-trigger">
+                                Is het consult echt gratis?
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-muted-foreground accordion-chevron"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Ja, het eerste consult is volledig gratis en vrijblijvend. We nemen de tijd om je gezicht te analyseren, je wensen te bespreken en een behandelplan voor te stellen. Je bent nergens aan verplicht.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-12">
+                        <p class="text-muted-foreground">
+                            Staat je vraag er niet tussen? 
+                            <a href="https://www.injectionqueen.nl/contact" class="text-primary font-semibold hover:underline">
+                                Neem contact op
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Location Section -->
+            <section id="locatie" class="section-padding bg-background">
+                <div class="container-narrow mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <!-- Left Content -->
+                        <div>
+                            <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">
+                                GEVESTIGD IN AMSTERDAM
+                            </span>
+                            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+                                Ontdek onze locatie
+                            </h2>
+                            <div class="space-y-4 text-muted-foreground text-lg">
+                                <p>
+                                    Je vindt ons in het bruisende Amsterdam en binnenkort in Spijkenisse. Hier bieden we je de mogelijkheid 
+                                    om je reis naar schoonheid en zelfvertrouwen te beginnen. We kijken ernaar uit om je te verwelkomen en 
+                                    samen jouw ideale look te realiseren.
+                                </p>
+                                <p>
+                                    Bij Injection Queen draait alles om jou. Neem vandaag nog contact met ons op voor een persoonlijk 
+                                    consult, en laten we samen je schoonheidsreis beginnen.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Right Content - Map -->
+                        <div class="h-[600px] w-full rounded-2xl overflow-hidden shadow-soft border border-border relative z-0" style="min-height: 600px;">
+                            <div id="map" class="w-full h-full" style="height: 100%; min-height: 600px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="section-padding bg-gradient-to-br from-primary to-sage-600">
+                <div class="container-narrow mx-auto">
+                    <div class="text-center max-w-3xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
+                            Klaar voor jouw transformatie?
+                        </h2>
+                        <p class="text-xl text-primary-foreground/90 mb-10 leading-relaxed">
+                            Boek vandaag nog je gratis consult en ontdek wat het Full Face 
+                            Rejuvenation Plan voor jou kan betekenen. Onze experts staan 
+                            klaar om je te begeleiden naar een stralende, jeugdige uitstraling.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                            <a href="https://www.injectionqueen.nl/contact" class="btn btn-size-xl bg-white text-primary hover:bg-white/90 shadow-elevated">
+                                <i data-lucide="calendar" class="w-5 h-5"></i>
+                                Book gratis consult
+                                <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://www.injectionqueen.nl/afspraak-maken" class="btn btn-size-xl border-2 border-white text-white hover:bg-white hover:text-primary">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                                Direct afspraak maken
+                            </a>
+                        </div>
+
+                        <div class="flex flex-wrap justify-center gap-6 text-primary-foreground/80 text-sm">
+                            <span class="flex items-center gap-2">✓ Gratis consult</span>
+                            <span class="flex items-center gap-2">✓ BIG-geregistreerde artsen</span>
+                            <span class="flex items-center gap-2">✓ Geen verplichtingen</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-foreground text-background">
+            <div class="border-b border-background/10">
+                <div class="container-narrow mx-auto px-4 md:px-8 py-12">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <h3 class="text-xl font-bold text-background mb-4">
+                            Full Face Rejuvenation bij Injection Queen Amsterdam
+                        </h3>
+                        <p class="text-background/70 text-sm leading-relaxed">
+                            Op zoek naar een <a href="https://www.injectionqueen.nl/botox-behandelingen" class="text-primary hover:underline" title="Botox behandelingen Amsterdam">Botox behandeling</a> 
+                            of <a href="https://www.injectionqueen.nl/filler-behandelingen" class="text-primary hover:underline" title="Filler behandelingen Amsterdam">filler behandeling in Amsterdam</a>? 
+                            Bij Injection Queen combineren we anti-aging injectables voor een complete 
+                            non-chirurgische facelift. Ontdek ons <a href="https://www.injectionqueen.nl/profhilo" class="text-primary hover:underline" title="Skinbooster behandelingen">skinbooster aanbod</a> 
+                            voor een stralende huid of bekijk onze <a href="https://www.injectionqueen.nl/tarieven" class="text-primary hover:underline" title="Prijzen cosmetische behandelingen Amsterdam">tarieven</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-narrow mx-auto px-4 md:px-8 py-16">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <div>
+                        <a href="https://www.injectionqueen.nl" class="mb-6 block hover:opacity-80 transition-opacity" title="Injection Queen - Cosmetische Kliniek Amsterdam">
+                            <img src="./assets/injectionqueenlogowhite.webp" alt="Injection Queen" class="h-16 w-auto object-contain">
+                        </a>
+                        <p class="text-background/70 mb-6">
+                            Cosmetische kliniek gespecialiseerd in <a href="https://www.injectionqueen.nl" class="text-primary hover:underline" title="Cosmetische injectables Amsterdam">natuurlijke esthetische behandelingen</a> 
+                            door BIG-geregistreerde artsen in Amsterdam.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="https://www.instagram.com/injectionqueen.nl" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="Volg Injection Queen op Instagram" title="Injection Queen Instagram">
+                                <i data-lucide="instagram" class="w-5 h-5 text-white"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="Volg Injection Queen op Facebook" title="Injection Queen Facebook">
+                                <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="Volg Injection Queen op TikTok" title="Injection Queen TikTok">
+                                <!-- TikTok Icon SVG -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-white"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-background mb-6">Op deze pagina</h3>
+                        <ul class="space-y-3">
+                            <li><a href="https://www.injectionqueen.nl/" class="footer-link">Hoofdwebsite</a></li>
+                            <li><button onclick="scrollToSection('over-ons')" class="footer-link footer-btn">Over ons</button></li>
+                            <li><button onclick="scrollToSection('behandelingen')" class="footer-link footer-btn">Behandelingen</button></li>
+                            <li><button onclick="scrollToSection('voor-na')" class="footer-link footer-btn">Voor & na</button></li>
+                            <li><button onclick="scrollToSection('reviews')" class="footer-link footer-btn">Ervaringen</button></li>
+                            <li><button onclick="scrollToSection('faq')" class="footer-link footer-btn">Veelgestelde vragen</button></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-background mb-6">Injection Queen</h3>
+                        <ul class="space-y-3">
+                            <li><a href="https://www.injectionqueen.nl/over-ons" class="footer-link" title="Over Injection Queen Amsterdam">Over Injection Queen</a></li>
+                            <li><a href="https://www.injectionqueen.nl/tarieven" class="footer-link" title="Tarieven cosmetische behandelingen">Tarieven & prijzen</a></li>
+                            <li><a href="https://www.injectionqueen.nl/voor-na/" class="footer-link" title="Voor en na foto's behandelingen">Voor & na galerij</a></li>
+                            <li><a href="https://www.injectionqueen.nl/" class="footer-link" title="Reviews van klanten Injection Queen">Klantreviews</a></li>
+                            <li><a href="https://www.injectionqueen.nl/blog" class="footer-link" title="Blog over cosmetische behandelingen">Blog & nieuws</a></li>
+                            <li><a href="https://www.injectionqueen.nl/afspraak-maken" class="footer-link" title="Afspraak maken">Afspraak maken</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="contact">
+                        <h3 class="font-bold text-background mb-6">Contact</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 footer-text">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                                <span>Pieter Calandlaan 1193<br>1069 SE Amsterdam</span>
+                            </li>
+                            <li class="flex items-center gap-3 footer-text">
+                                <i data-lucide="phone" class="w-5 h-5 text-primary flex-shrink-0"></i>
+                                <a href="tel:0201234567" class="hover:text-primary transition-colors">020 - 123 45 67</a>
+                            </li>
+                            <li class="flex items-center gap-3 footer-text">
+                                <i data-lucide="mail" class="w-5 h-5 text-primary flex-shrink-0"></i>
+                                <a href="mailto:info@injectionqueen.nl" class="hover:text-primary transition-colors">info@injectionqueen.nl</a>
+                            </li>
+                            <li class="flex items-start gap-3 footer-text">
+                                <i data-lucide="clock" class="w-5 h-5 text-primary flex-shrink-0 mt-1"></i>
+                                <span>Ma - Za: 10:00 - 18:00<br>Zondag: Gesloten</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-background/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-background/50">
+                    <p>&copy; 2026 Injection Queen. Alle rechten voorbehouden.</p>
+                    <div class="flex gap-6 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-primary transition-colors">Privacy</a>
+                        <a href="#" class="hover:text-primary transition-colors">Algemene voorwaarden</a>
+                        <a href="https://injectionqueen.nl" class="hover:text-primary transition-colors">injectionqueen.nl</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Terug naar boven">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./script.js"></script>
+</body>
+</html>
