@@ -9,23 +9,19 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.injectionqueen.nl/">
 
-    <!-- Open Graph -->
     <meta property="og:title" content="Injection Queen | Sculptra, Profhilo & Morpheus8 Specialist">
     <meta property="og:description" content="Injection Queen: Dé specialist in Sculptra, Profhilo, Salmon DNA (PDRN) en Morpheus8. Herstel volume en verbeter huidkwaliteit natuurlijk. Boek uw consult!">
     <meta property="og:type" content="website">
-    <!-- og:url removed to allow social previews to work on staging/Netlify URLs -->
+    
     <meta property="og:image" content="./assets/hero-sculptra-woman.webp">
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Injection Queen | Sculptra, Profhilo & Morpheus8 Specialist">
     <meta name="twitter:description" content="Injection Queen: Dé specialist in Sculptra, Profhilo, Salmon DNA (PDRN) en Morpheus8. Herstel volume en verbeter huidkwaliteit natuurlijk. Boek uw consult!">
     <meta name="twitter:image" content="./assets/hero-sculptra-woman.webp">
 
-    <!-- Schema.org / Google+ -->
     <meta itemprop="image" content="https://www.injectionqueen.nl/assets/hero-sculptra-woman.webp">
 
-    <!-- Structured Data (Schema.org) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -67,23 +63,21 @@
 
     <link rel="stylesheet" href="./style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Leaflet Map -->
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
     <div class="min-h-screen bg-background">
-        <!-- Header -->
+        
         <header class="fixed top-0 left-0 right-0 z-50 transparent-nav border-b transition-all duration-300">
             <div class="container-narrow mx-auto px-4 md:px-8">
                 <div class="flex items-center justify-between h-20">
-                    <!-- Logo -->
+                    
                     <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="hover:opacity-80 transition-opacity flex items-center" title="Terug naar boven">
                         <img src="./assets/injectionqueenlogo.webp" alt="Injection Queen Logo - Specialist in Collageen & Biostimulatie" class="h-12 w-auto object-contain">
                     </a>
 
-                    <!-- Desktop Navigation -->
                     <nav class="hidden md:flex items-center gap-8">
                         <a href="https://www.injectionqueen.nl" class="text-base font-medium nav-link hover:opacity-80 transition-colors">Hoofdwebsite</a>
                         <button onclick="scrollToSection('over-ons')" class="text-base font-medium nav-link hover:opacity-80 transition-colors">Over ons</button>
@@ -97,7 +91,6 @@
                         </a>
                     </nav>
 
-                    <!-- Mobile Menu Button -->
                     <button class="md:hidden p-2 mobile-menu-icon" id="mobile-menu-btn" aria-label="Toggle menu">
                         <i data-lucide="menu" id="menu-icon"></i>
                         <i data-lucide="x" id="close-icon" class="hidden"></i>
@@ -105,7 +98,6 @@
                 </div>
             </div>
 
-            <!-- Mobile Navigation -->
             <nav id="mobile-menu" class="hidden md:hidden border-t border-border animate-fade-up max-h-[calc(100vh-5rem)] overflow-y-auto bg-background/95 backdrop-blur-sm">
                 <div class="container-narrow mx-auto px-4 md:px-8 py-4">
                     <div class="flex flex-col gap-4">
@@ -125,36 +117,32 @@
         </header>
 
         <main>
-            <!-- Hero Section -->
+            
             <section class="relative min-h-screen flex items-center pt-20">
-                <!-- Background Image -->
+                
                 <div class="absolute inset-0 z-0">
                     <img src="./assets/hero-sculptra-woman.webp" alt="Natuurlijke verjonging met Sculptra bij Injection Queen Amsterdam" class="w-full h-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent"></div>
                 </div>
 
-                <!-- Content -->
                 <div class="relative z-10 container-narrow mx-auto px-4 md:px-8 py-16 md:py-24">
                     <div class="max-w-2xl">
-                        <!-- Badge -->
+                        
                         <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6 animate-fade-up">
                             <span class="text-primary text-sm font-semibold">Nieuw</span>
                             <span class="text-white/90 text-sm">Collageen & Biostimulatie Kliniek</span>
                         </div>
 
-                        <!-- Main Heading -->
                         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight animate-fade-up" style="animation-delay: 0.1s">
                             Natuurlijke
                             <span class="block text-primary">Verjonging</span>
                         </h1>
 
-                        <!-- Subheading -->
                         <p class="text-lg md:text-xl text-white/90 mb-8 leading-relaxed animate-fade-up" style="animation-delay: 0.2s">
                             Herstel volume en verbeter uw huidkwaliteit van binnenuit. Wij zijn gespecialiseerd in 
                             Sculptra, Profhilo en Salmon DNA voor een langdurig, natuurlijk resultaat.
                         </p>
 
-                        <!-- Trust Points -->
                         <div class="flex flex-col sm:flex-row gap-4 mb-10 animate-fade-up" style="animation-delay: 0.3s">
                             <div class="flex items-center gap-2 text-white/90">
                                 <i data-lucide="check-circle-2" class="w-5 h-5 text-primary"></i>
@@ -170,7 +158,6 @@
                             </div>
                         </div>
 
-                        <!-- CTA Buttons -->
                         <div class="flex flex-col sm:flex-row gap-4 animate-fade-up" style="animation-delay: 0.4s">
                             <a href="https://www.injectionqueen.nl/contact" class="btn btn-hero">
                                 Gratis Consult
@@ -181,7 +168,6 @@
                             </a>
                         </div>
 
-                        <!-- Hero Stats with Counter -->
                         <div class="flex flex-wrap gap-8 mt-12 animate-fade-up" style="animation-delay: 0.6s">
                             <div>
                                 <div class="text-3xl font-bold text-white flex items-center">
@@ -208,11 +194,10 @@
                 </div>
             </section>
 
-            <!-- About Section -->
             <section id="over-ons" class="section-padding bg-background">
                 <div class="container-narrow mx-auto">
                     <div class="grid lg:grid-cols-2 gap-12 items-center">
-                        <!-- Left Content -->
+                        
                         <div>
                             <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">
                                 Over Injection Queen
@@ -238,7 +223,6 @@
                                 </p>
                             </div>
 
-                            <!-- Stats -->
                             <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-8">
                                 <div class="text-center">
                                     <p class="text-2xl md:text-3xl font-bold text-primary">5000+</p>
@@ -258,7 +242,6 @@
                                 </div>
                             </div>
 
-                            <!-- CTA -->
                             <div class="mt-8">
                                 <a href="https://www.injectionqueen.nl/over-ons" class="btn btn-default" title="Lees meer over Injection Queen">
                                     Lees meer over ons team
@@ -267,12 +250,11 @@
                             </div>
                         </div>
 
-                        <!-- Right - Specialist Image -->
                         <div class="relative h-full flex items-center">
                             <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-soft w-full relative z-0">
                                 <img src="./assets/specialist-doctor-portrait.webp" alt="Specialist arts bij Injection Queen" class="w-full h-full object-cover">
                             </div>
-                            <!-- Floating Badge -->
+                            
                             <div class="absolute bottom-8 -left-8 bg-white p-5 rounded-xl shadow-elevated max-w-[220px] hidden md:block z-10 border border-border/50">
                                 <div class="flex items-center gap-3 mb-2">
                                     <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
@@ -287,10 +269,9 @@
                 </div>
             </section>
 
-            <!-- What Is Section -->
             <section id="wat-is-rejuvenation" class="section-padding bg-background">
                 <div class="container-narrow mx-auto">
-                    <!-- Section Header -->
+                    
                     <div class="text-center max-w-3xl mx-auto mb-16">
                         <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">
                             De kracht van Collageen
@@ -303,7 +284,6 @@
                         </p>
                     </div>
 
-                    <!-- Key Characteristics Grid -->
                     <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
                         <div class="space-y-8">
                             <div>
@@ -355,7 +335,6 @@
                         </div>
                     </div>
 
-                    <!-- Treatment Areas -->
                     <div class="bg-card border border-border rounded-xl p-8 shadow-soft mb-12">
                         <h3 class="text-2xl font-bold text-foreground mb-6 text-center">Veelvoorkomende Behandelgebieden</h3>
                         <div class="grid md:grid-cols-2 gap-8">
@@ -382,8 +361,7 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Protocol & Aftercare -->
+
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-secondary rounded-xl p-6">
                             <h3 class="font-bold text-foreground mb-4 flex items-center gap-2">
@@ -413,7 +391,6 @@
                 </div>
             </section>
 
-            <!-- Treatments Section -->
             <section id="behandelingen" class="section-padding bg-secondary">
                 <div class="container-narrow mx-auto">
                     <div class="text-center max-w-3xl mx-auto mb-16">
@@ -429,7 +406,7 @@
                     </div>
 
                     <div class="grid md:grid-cols-3 gap-8">
-                        <!-- Profhilo -->
+                        
                         <div class="bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 group">
                             <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <i data-lucide="droplets" class="w-8 h-8 text-primary"></i>
@@ -450,7 +427,6 @@
                             </div>
                         </div>
 
-                        <!-- Salmon DNA -->
                         <div class="bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 group">
                             <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <i data-lucide="dna" class="w-8 h-8 text-primary"></i>
@@ -471,7 +447,6 @@
                             </div>
                         </div>
 
-                        <!-- Morpheus8 -->
                         <div class="bg-card rounded-2xl p-8 shadow-card hover:shadow-elevated transition-all duration-300 group">
                             <div class="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                 <i data-lucide="zap" class="w-8 h-8 text-primary"></i>
@@ -495,7 +470,6 @@
                 </div>
             </section>
 
-            <!-- Comparison Section -->
             <section class="section-padding bg-background">
                 <div class="container-narrow mx-auto">
                     <div class="text-center max-w-3xl mx-auto mb-16">
@@ -510,7 +484,6 @@
                         </p>
                     </div>
 
-                    <!-- Desktop Table View -->
                     <div id="desktop-comparison-view">
                         <table class="w-full text-left border-collapse bg-card rounded-xl overflow-hidden shadow-soft">
                             <thead class="bg-primary/10 text-primary">
@@ -550,9 +523,8 @@
                         </table>
                     </div>
 
-                    <!-- Mobile Card View -->
                     <div id="mobile-comparison-view" class="space-y-4">
-                        <!-- Profhilo Card -->
+                        
                         <div class="bg-card rounded-xl p-6 shadow-soft border border-border">
                             <h3 class="text-xl font-bold text-foreground mb-4 pb-2 border-b border-border">Profhilo</h3>
                             <div class="space-y-3">
@@ -571,7 +543,6 @@
                             </div>
                         </div>
 
-                        <!-- Zalm DNA Card -->
                         <div class="bg-card rounded-xl p-6 shadow-soft border border-border">
                             <h3 class="text-xl font-bold text-foreground mb-4 pb-2 border-b border-border">Zalm (Salmon) DNA</h3>
                             <div class="space-y-3">
@@ -590,7 +561,6 @@
                             </div>
                         </div>
 
-                        <!-- Morpheus8 Card -->
                         <div class="bg-card rounded-xl p-6 shadow-soft border border-border">
                             <h3 class="text-xl font-bold text-foreground mb-4 pb-2 border-b border-border">Morpheus8</h3>
                             <div class="space-y-3">
@@ -609,7 +579,6 @@
                             </div>
                         </div>
 
-                        <!-- Sculptra Card -->
                         <div class="bg-card rounded-xl p-6 shadow-soft border border-primary/20 bg-primary/5">
                             <h3 class="text-xl font-bold text-foreground mb-4 pb-2 border-b border-primary/20 flex items-center gap-2">
                                 Sculptra
@@ -659,7 +628,6 @@
                 </div>
             </section>
 
-            <!-- Safety Section -->
             <section id="veiligheid" class="section-padding bg-foreground text-background">
                 <div class="container-narrow mx-auto">
                     <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -731,7 +699,6 @@
                 </div>
             </section>
 
-            <!-- Before After Section -->
             <section id="voor-na" class="section-padding bg-background">
                 <div class="container-narrow mx-auto">
                     <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -785,7 +752,6 @@
                 </div>
             </section>
 
-            <!-- Testimonials Section -->
             <section id="reviews" class="section-padding bg-secondary">
                 <div class="container-narrow mx-auto">
                     <div class="text-center max-w-3xl mx-auto mb-16">
@@ -855,7 +821,6 @@ Ze zorgde ervoor dat ik me extreem comfortabel voelde. Zeker een aanrader, ik ko
                 </div>
             </section>
 
-            <!-- FAQ Section -->
             <section id="faq" class="section-padding bg-background">
                 <div class="container-narrow mx-auto">
                     <div class="text-center max-w-3xl mx-auto mb-16">
@@ -865,7 +830,7 @@ Ze zorgde ervoor dat ik me extreem comfortabel voelde. Zeker een aanrader, ik ko
                     </div>
 
                     <div class="max-w-3xl mx-auto space-y-4" id="faq-accordion">
-                        <!-- FAQ Items will be here -->
+                        
                         <div class="accordion-item">
                             <button class="accordion-trigger">
                                 Zijn biostimulatoren (Sculptra, Profhilo) veilig?
@@ -942,11 +907,10 @@ Ze zorgde ervoor dat ik me extreem comfortabel voelde. Zeker een aanrader, ik ko
                 </div>
             </section>
 
-            <!-- Location Section -->
             <section id="locatie" class="section-padding bg-background">
                 <div class="container-narrow mx-auto">
                     <div class="grid lg:grid-cols-2 gap-12 items-center">
-                        <!-- Left Content -->
+                        
                         <div>
                             <span class="inline-block text-primary font-semibold text-sm uppercase tracking-wider mb-4">
                                 GEVESTIGD IN AMSTERDAM
@@ -967,7 +931,6 @@ Ze zorgde ervoor dat ik me extreem comfortabel voelde. Zeker een aanrader, ik ko
                             </div>
                         </div>
 
-                        <!-- Right Content - Map -->
                         <div class="h-[600px] w-full rounded-2xl overflow-hidden shadow-soft border border-border relative z-0" style="min-height: 600px;">
                             <div id="map" class="w-full h-full" style="height: 100%; min-height: 600px;"></div>
                         </div>
@@ -975,7 +938,6 @@ Ze zorgde ervoor dat ik me extreem comfortabel voelde. Zeker een aanrader, ik ko
                 </div>
             </section>
 
-            <!-- CTA Section -->
             <section class="section-padding bg-gradient-to-br from-primary to-sage-600">
                 <div class="container-narrow mx-auto">
                     <div class="text-center max-w-3xl mx-auto">
@@ -1010,7 +972,6 @@ Ze zorgde ervoor dat ik me extreem comfortabel voelde. Zeker een aanrader, ik ko
             </section>
         </main>
 
-        <!-- Footer -->
         <footer class="bg-foreground text-background">
             <div class="border-b border-background/10">
                 <div class="container-narrow mx-auto px-4 md:px-8 py-12">
@@ -1047,7 +1008,7 @@ Ze zorgde ervoor dat ik me extreem comfortabel voelde. Zeker een aanrader, ik ko
                                 <i data-lucide="facebook" class="w-5 h-5 text-white"></i>
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-primary rounded-full flex items-center justify-center hover:bg-primary/90 transition-colors" aria-label="Volg Injection Queen op TikTok" title="Injection Queen TikTok">
-                                <!-- TikTok Icon SVG -->
+                                
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-white"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
                             </a>
                         </div>
@@ -1111,7 +1072,7 @@ Ze zorgde ervoor dat ik me extreem comfortabel voelde. Zeker een aanrader, ik ko
             </div>
         </footer>
     </div>
-    <!-- Scroll to Top Button -->
+    
     <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Terug naar boven">
         <i data-lucide="arrow-up" class="w-5 h-5"></i>
     </button>

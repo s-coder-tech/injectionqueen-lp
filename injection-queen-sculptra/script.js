@@ -1,8 +1,7 @@
 
-// Initialize Lucide icons
+
 lucide.createIcons();
 
-// Mobile Menu Functionality
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const menuIcon = document.getElementById('menu-icon');
@@ -11,33 +10,28 @@ const closeIcon = document.getElementById('close-icon');
 if (mobileMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener('click', () => {
         const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
-        
-        // Toggle menu visibility
+
         if (mobileMenu.classList.contains('hidden')) {
             mobileMenu.classList.remove('hidden');
-            // Trigger animation after removing hidden
+            
             requestAnimationFrame(() => {
                 mobileMenu.classList.add('animate-active');
             });
         } else {
             mobileMenu.classList.remove('animate-active');
-            // Wait for animation to finish before hiding (optional, but for now just hide immediately to be safe/simple or match expected behavior)
+            
             mobileMenu.classList.add('hidden');
         }
-        
-        // Toggle header background for mobile menu
+
         const header = document.querySelector('header');
         header.classList.toggle('mobile-open');
-        
-        // Update aria attribute
+
         mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
-        
-        // Toggle icons
+
         menuIcon.classList.toggle('hidden');
         closeIcon.classList.toggle('hidden');
     });
 
-    // Close mobile menu when a link is clicked
     const mobileLinks = mobileMenu.querySelectorAll('button, a');
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -52,11 +46,10 @@ if (mobileMenuBtn && mobileMenu) {
     });
 }
 
-// Smooth Scroll Function
 window.scrollToSection = function(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
-        const headerOffset = 80; // Height of fixed header
+        const headerOffset = 80; 
         const elementPosition = section.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -67,7 +60,6 @@ window.scrollToSection = function(sectionId) {
     }
 };
 
-// Accordion Functionality
 const accordionTriggers = document.querySelectorAll('.accordion-trigger');
 
 accordionTriggers.forEach(trigger => {
@@ -76,7 +68,6 @@ accordionTriggers.forEach(trigger => {
         const icon = trigger.querySelector('.accordion-chevron');
         const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
 
-        // Close other accordion items
         accordionTriggers.forEach(otherTrigger => {
             if (otherTrigger !== trigger) {
                 otherTrigger.setAttribute('aria-expanded', 'false');
@@ -87,7 +78,6 @@ accordionTriggers.forEach(trigger => {
             }
         });
 
-        // Toggle current accordion item
         trigger.setAttribute('aria-expanded', !isExpanded);
         content.classList.toggle('open');
         
@@ -101,7 +91,6 @@ accordionTriggers.forEach(trigger => {
     });
 });
 
-// Scroll Animations (Intersection Observer)
 const observerOptions = {
     root: null,
     rootMargin: '0px',
@@ -112,7 +101,7 @@ const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('animate-active');
-            observer.unobserve(entry.target); // Only animate once
+            observer.unobserve(entry.target); 
         }
     });
 }, observerOptions);
@@ -121,7 +110,6 @@ document.querySelectorAll('.animate-fade-up').forEach(el => {
     observer.observe(el);
 });
 
-// Add scroll listener for header background
 const header = document.querySelector('header');
 
 function updateNavbar() {
@@ -134,12 +122,10 @@ function updateNavbar() {
     }
 }
 
-// Initial check
 updateNavbar();
 
 window.addEventListener('scroll', updateNavbar);
 
-// Number Counting Animation
 const counterObserverOptions = {
     root: null,
     rootMargin: '0px',
@@ -151,8 +137,8 @@ const counterObserver = new IntersectionObserver((entries, observer) => {
         if (entry.isIntersecting) {
             const counter = entry.target;
             const target = parseInt(counter.getAttribute('data-target'));
-            const duration = 6000; // 6 seconds (Tripled to slow down animation)
-            const step = target / (duration / 16); // 60fps
+            const duration = 6000; 
+            const step = target / (duration / 16); 
             let current = 0;
 
             const updateCounter = () => {
@@ -175,11 +161,10 @@ document.querySelectorAll('.counter').forEach(counter => {
     counterObserver.observe(counter);
 });
 
-// Scroll to Top Functionality
 const scrollTopBtn = document.getElementById('scrollTopBtn');
 
 if (scrollTopBtn) {
-    // Show/hide button based on scroll position
+    
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 300) {
             scrollTopBtn.classList.add('visible');
@@ -188,7 +173,6 @@ if (scrollTopBtn) {
         }
     });
 
-    // Smooth scroll to top
     scrollTopBtn.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
@@ -197,22 +181,20 @@ if (scrollTopBtn) {
     });
 }
 
-// Map Implementation
 const mapElement = document.getElementById('map');
 if (mapElement) {
-    // Coordinates for Pieter Calandlaan 1193, 1069 SE Amsterdam
+    
     const lat = 52.3511;
     const lng = 4.7964;
     
     const map = L.map('map', {
-        scrollWheelZoom: false // Disable scroll zoom initially
+        scrollWheelZoom: false 
     }).setView([lat, lng], 15);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // Custom Icon
     var customIcon = L.icon({
         iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
         iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
@@ -224,8 +206,7 @@ if (mapElement) {
     });
 
     const marker = L.marker([lat, lng], {icon: customIcon}).addTo(map);
-    
-    // Custom popup content
+
     const popupContent = `
         <div style="text-align: center; font-family: inherit;">
             <strong style="color: #4e8b71; font-size: 1.1em; display: block; margin-bottom: 4px;">Injection Queen</strong>
@@ -241,7 +222,6 @@ if (mapElement) {
 
     marker.bindPopup(popupContent).openPopup();
 
-    // Enable scroll zoom on click/focus
     map.on('click', function() {
         map.scrollWheelZoom.enable();
     });
@@ -250,6 +230,5 @@ if (mapElement) {
         map.scrollWheelZoom.disable();
     });
 
-    // Force invalidation to ensure proper rendering
     setTimeout(() => { map.invalidateSize(); }, 100);
 }

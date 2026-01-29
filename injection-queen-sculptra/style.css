@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
-/* --- 1. Variables --- */
 :root {
-  /* Core brand colors */
+  
   --background: 0 0% 100%;
   --foreground: 0 0% 0%;
 
@@ -12,7 +11,7 @@
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 0%;
 
-  --primary: 150 29% 43%; /* #4E8B71 approx, actually hsl(150, 29%, 43%) */
+  --primary: 150 29% 43%; 
   --primary-foreground: 0 0% 100%;
 
   --secondary: 0 0% 96%;
@@ -67,7 +66,6 @@
   --ring: 150 29% 50%;
 }
 
-/* --- 2. Reset & Base --- */
 *, *::before, *::after {
   box-sizing: border-box;
   border-color: hsl(var(--border));
@@ -97,8 +95,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700; /* font-bold */
-  letter-spacing: -0.025em; /* tracking-tight */
+  font-weight: 700; 
+  letter-spacing: -0.025em; 
   margin-top: 0;
 }
 
@@ -132,9 +130,6 @@ img {
   height: auto;
 }
 
-/* --- 3. Utilities --- */
-
-/* Colors */
 .text-primary { color: hsl(var(--primary)); }
 .text-primary-foreground { color: hsl(var(--primary-foreground)); }
 .text-foreground { color: hsl(var(--foreground)); }
@@ -184,7 +179,6 @@ img {
 .border-white\/20 { border-color: rgba(255, 255, 255, 0.2); }
 .border-background\/10 { border-color: hsl(var(--background) / 0.1); }
 
-/* Typography */
 .font-sans { font-family: 'Montserrat', sans-serif; }
 .font-bold { font-weight: 700; }
 .font-semibold { font-weight: 600; }
@@ -211,14 +205,13 @@ img {
 .text-left { text-align: left; }
 .whitespace-nowrap { white-space: nowrap; }
 
-/* Layout & Spacing */
 .container-narrow {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
-  max-width: 1200px; /* Guessing narrow container */
+  max-width: 1200px; 
 }
 
 @media (min-width: 768px) {
@@ -246,7 +239,6 @@ img {
 .gap-8 { gap: 2rem; }
 .gap-12 { gap: 3rem; }
 
-/* Space Between Utilities */
 .space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; }
 .space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem; }
 .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
@@ -259,7 +251,6 @@ img {
 .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
-/* Responsive Grid */
 @media (min-width: 640px) {
   .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sm\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
@@ -353,7 +344,6 @@ img {
 .section-padding { padding-top: 4rem; padding-bottom: 4rem; }
 @media (min-width: 768px) { .section-padding { padding-top: 6rem; padding-bottom: 6rem; } }
 
-/* Positioning */
 .relative { position: relative; }
 .absolute { position: absolute; }
 .fixed { position: fixed; }
@@ -369,7 +359,6 @@ img {
 .z-10 { z-index: 10; }
 .z-50 { z-index: 50; }
 
-/* Effects */
 .opacity-80 { opacity: 0.8; }
 .opacity-50 { opacity: 0.5; }
 .hover\:opacity-80:hover { opacity: 0.8; }
@@ -388,7 +377,6 @@ img {
 .aspect-square { aspect-ratio: 1 / 1; }
 .aspect-\[3\/4\] { aspect-ratio: 3 / 4; }
 
-/* Transitions */
 .transition-all { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
 .transition-colors { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
 .transition-opacity { transition-property: opacity; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
@@ -407,19 +395,16 @@ img {
 .hover\:text-foreground:hover { color: hsl(var(--foreground)); }
 .hover\:underline:hover { text-decoration: underline; }
 
-/* --- 4. Components --- */
-
-/* Button */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   white-space: nowrap;
-  border-radius: 0.25rem; /* rounded (normally rectangular) */
-  font-size: 0.875rem; /* text-sm */
-  font-weight: 600; /* font-semibold */
-  padding: 0.75rem 1.5rem; /* px-6 py-3 for better size */
+  border-radius: 0.25rem; 
+  font-size: 0.875rem; 
+  font-weight: 600; 
+  padding: 0.75rem 1.5rem; 
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -427,31 +412,31 @@ img {
 .btn-default {
   background-color: hsl(var(--primary));
   color: hsl(var(--primary-foreground));
-  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08); /* shadow-soft */
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08); 
 }
 .btn-default:hover {
   background-color: hsl(var(--primary) / 0.9);
-  box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.12); /* shadow-elevated */
+  box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.12); 
 }
 
 .btn-hero {
   background-color: hsl(var(--primary));
   color: hsl(var(--primary-foreground));
-  box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.12); /* shadow-elevated */
-  font-size: 1rem; /* text-base */
-  padding: 1rem 2rem; /* px-8 py-4 */
+  box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.12); 
+  font-size: 1rem; 
+  padding: 1rem 2rem; 
 }
 .btn-hero:hover {
   background-color: hsl(var(--primary) / 0.9);
-  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1); /* shadow-card */
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1); 
 }
 
 .btn-hero-outline {
   border: 2px solid white;
   background-color: transparent;
   color: white;
-  font-size: 1rem; /* text-base */
-  padding: 1rem 2rem; /* px-8 py-4 */
+  font-size: 1rem; 
+  padding: 1rem 2rem; 
 }
 .btn-hero-outline:hover {
   background-color: white;
@@ -469,28 +454,27 @@ img {
 }
 
 .btn-size-lg {
-  height: 3.5rem; /* h-14 */
-  padding-left: 2.5rem; /* px-10 */
+  height: 3.5rem; 
+  padding-left: 2.5rem; 
   padding-right: 2.5rem;
-  font-size: 1rem; /* text-base */
+  font-size: 1rem; 
 }
 .btn-size-xl {
-  height: 4rem; /* h-16 */
-  border-radius: 1rem; /* rounded-2xl */
-  padding-left: 3rem; /* px-12 */
+  height: 4rem; 
+  border-radius: 1rem; 
+  padding-left: 3rem; 
   padding-right: 3rem;
-  font-size: 1.125rem; /* text-lg */
+  font-size: 1.125rem; 
 }
 
-/* Accordion */
 .accordion-item {
   background-color: hsl(var(--card));
   border: 1px solid hsl(var(--border));
-  border-radius: 0.75rem; /* rounded-xl */
-  padding-left: 1.5rem; /* px-6 */
+  border-radius: 0.75rem; 
+  padding-left: 1.5rem; 
   padding-right: 1.5rem;
-  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08); /* shadow-soft */
-  margin-bottom: 1rem; /* space-y-4 implies this */
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.08); 
+  margin-bottom: 1rem; 
 }
 .accordion-trigger {
   width: 100%;
@@ -518,36 +502,32 @@ img {
   font-size: 1rem;
 }
 .accordion-content.open {
-  /* max-height is set by JS */
+  
   padding-bottom: 1.5rem;
 }
-/* Chevron for accordion (manual implementation since lucide icons are static svg) */
+
 .accordion-chevron {
   transition: transform 0.2s;
 }
 
-/* Animations */
 @keyframes fade-up {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-up {
-  opacity: 0; /* Start hidden */
+  opacity: 0; 
 }
 
 .animate-fade-up.animate-active {
   animation: fade-up 0.6s ease-out forwards;
 }
 
-/* Classes to trigger animation on scroll */
 .opacity-0 { opacity: 0; }
 .opacity-100 { opacity: 1; }
 
-/* Custom Overrides */
 .fill-yellow-400 { fill: #facc15; }
 
-/* Missing Utilities for Hero Section */
 .container {
   width: 100%;
   margin-left: auto;
@@ -569,7 +549,6 @@ img {
 .text-white\/80 { color: rgba(255, 255, 255, 0.8); }
 .text-white\/90 { color: rgba(255, 255, 255, 0.9); }
 
-/* Footer Utilities */
 .footer-link {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -589,7 +568,6 @@ img {
   text-align: left;
 }
 
-/* Navbar Scroll States */
 header.transparent-nav {
     background-color: transparent;
     border-bottom-color: transparent;
@@ -603,7 +581,6 @@ header.scrolled-nav {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
-/* Navbar Text Colors */
 header.transparent-nav .nav-link,
 header.transparent-nav .logo-text,
 header.transparent-nav .mobile-menu-icon {
@@ -632,7 +609,6 @@ header.scrolled-nav .nav-link:hover {
     color: hsl(var(--primary));
 }
 
-/* Navbar Transitions */
 header {
     transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -641,7 +617,6 @@ header {
     transition: color 0.3s ease;
 }
 
-/* Mobile Menu Open State - Overrides transparent-nav */
 header.mobile-open {
     background-color: rgba(255, 255, 255, 0.95) !important;
     backdrop-filter: blur(4px);
@@ -663,7 +638,6 @@ header.mobile-open .nav-link:hover {
     color: hsl(var(--primary)) !important;
 }
 
-/* Scroll to Top Button */
 .scroll-top-btn {
     position: fixed;
     bottom: 1.5rem;
@@ -698,7 +672,6 @@ header.mobile-open .nav-link:hover {
     box-shadow: 0 8px 30px -8px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile specific adjustment if needed, but 1.5rem is generally fine */
 @media (max-width: 768px) {
     .scroll-top-btn {
         bottom: 1rem;
